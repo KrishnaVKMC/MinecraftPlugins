@@ -1,0 +1,10 @@
+create-message: '&bYour armor stand has been brought to life'
+delete-message: '&cYou have brutally murdered an armor stand '
+confirm-option: '&aOption Confirmed'
+cancel-option: '&cOption Cancelled'
+
+#menu names
+main-menu: '&1Armor Stand GUI'
+create-menu: '&aCreate an Armor Stand'
+confirm-menu: '&aConfirm Option'
+armor-menu: '&bChoose some Armor'

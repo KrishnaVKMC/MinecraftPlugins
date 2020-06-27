@@ -1,0 +1,12 @@
+name: ArmorStandGUI
+version: ${project.version}
+main: me.krishna.armorstandgui.ArmorStandGui
+api-version: 1.13
+commands:
+  armorstand:
+    description: armorstand
+    usage: /<command>
+    aliases:
+      - as
+
+
