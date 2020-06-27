@@ -156,6 +156,57 @@ public class MenuHandler implements Listener {
                 //get an instance of the armor stand
                 ArmorStand stand = plugin.amorstands.get(player);
                 switch (e.getCurrentItem().getType()){
+                    //Leather Armor
+                    case LEATHER_HELMET:
+                        if(stand.getHelmet().getType() == Material.LEATHER_HELMET){
+                            stand.setHelmet(null);
+                            player.sendMessage("Remove!");
+
+                        }else{
+                            stand.setHelmet(new ItemStack(Material.LEATHER_HELMET));
+                            player.sendMessage("Added!");
+
+                        }
+                        plugin.openArmorMenu(player);
+                        break;
+                    case LEATHER_CHESTPLATE:
+                        if(stand.getChestplate().getType() == Material.LEATHER_CHESTPLATE){
+                            stand.setChestplate(null);
+                            player.sendMessage("Remove!");
+
+                        }else{
+                            stand.setChestplate(new ItemStack(Material.LEATHER_CHESTPLATE));
+                            player.sendMessage("Added!");
+
+                        }
+                        plugin.openArmorMenu(player);
+                        break;
+                    case LEATHER_LEGGINGS:
+                        if(stand.getLeggings().getType() == Material.LEATHER_LEGGINGS){
+                            stand.setLeggings(null);
+                            player.sendMessage("Remove!");
+
+                        }else{
+                            stand.setLeggings(new ItemStack(Material.LEATHER_LEGGINGS));
+                            player.sendMessage("Added!");
+
+                        }
+                        plugin.openArmorMenu(player);
+                        break;
+                    case LEATHER_BOOTS:
+                        if(stand.getBoots().getType() == Material.LEATHER_BOOTS){
+                            stand.setBoots(null);
+                            player.sendMessage("Remove!");
+
+                        }else{
+                            stand.setBoots(new ItemStack(Material.LEATHER_BOOTS));
+                            player.sendMessage("Added!");
+
+                        }
+                        plugin.openArmorMenu(player);
+                        break;
+
+                    //Diamond armor
                     case DIAMOND_HELMET:
                        if(stand.getHelmet().getType() == Material.DIAMOND_HELMET){
                            stand.setHelmet(null);
@@ -165,7 +216,9 @@ public class MenuHandler implements Listener {
                            stand.setHelmet(new ItemStack(Material.DIAMOND_HELMET));
                            player.sendMessage("Added!");
 
+
                        }
+                        plugin.openArmorMenu(player);
                         break;
                     case DIAMOND_CHESTPLATE:
                         if(stand.getChestplate().getType() == Material.DIAMOND_CHESTPLATE){
@@ -177,6 +230,7 @@ public class MenuHandler implements Listener {
                             player.sendMessage("Added!");
 
                         }
+                        plugin.openArmorMenu(player);
                         break;
                     case DIAMOND_LEGGINGS:
                         if(stand.getLeggings().getType() == Material.DIAMOND_LEGGINGS){
@@ -188,6 +242,7 @@ public class MenuHandler implements Listener {
                             player.sendMessage("Added!");
 
                         }
+                        plugin.openArmorMenu(player);
                         break;
                     case DIAMOND_BOOTS:
                         if(stand.getBoots().getType() == Material.DIAMOND_BOOTS){
@@ -199,7 +254,9 @@ public class MenuHandler implements Listener {
                             player.sendMessage("Added!");
 
                         }
+                        plugin.openArmorMenu(player);
                         break;
+                    // Confirm button
                     case GREEN_WOOL:
                         player.sendMessage("Armor Confirmed");
                         plugin.openCrateMenu(player);

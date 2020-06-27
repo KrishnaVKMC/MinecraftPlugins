@@ -153,14 +153,27 @@ public final class ArmorStandGui extends JavaPlugin {
         player.openInventory(confirm_menu);
     }
 
+
     public void openArmorMenu(Player player){
         // add new inventory to select the different armor pieces
-        Inventory armor_menu = Bukkit.createInventory(player,45, ChatColor.translateAlternateColorCodes('&', this.getConfig().getString("armor-menu")));
-        // adding diamond armor
-        ItemStack head = new ItemStack(Material.DIAMOND_HELMET);
-        ItemStack chest = new ItemStack(Material.DIAMOND_CHESTPLATE);
-        ItemStack legs = new ItemStack(Material.DIAMOND_LEGGINGS);
-        ItemStack boot = new ItemStack(Material.DIAMOND_BOOTS);
+        Inventory armor_menu = Bukkit.createInventory(player,54, ChatColor.translateAlternateColorCodes('&', this.getConfig().getString("armor-menu")));
+        ArmorStand stand = this.amorstands.get(player);
+        //get the current armor
+        ItemStack current_head = new ItemStack(stand.getHelmet());
+        ItemStack current_chest = new ItemStack(stand.getChestplate());
+        ItemStack current_legs = new ItemStack(stand.getLeggings());
+        ItemStack current_boots= new ItemStack(stand.getBoots());
+        //leather armor
+        ItemStack leather_helmet = new ItemStack(Material.LEATHER_HELMET);
+        ItemStack leather_chest = new ItemStack(Material.LEATHER_CHESTPLATE);
+        ItemStack leather_leggings = new ItemStack(Material.LEATHER_LEGGINGS);
+        ItemStack leather_boots = new ItemStack(Material.LEATHER_BOOTS);
+
+        //diamond armor
+        ItemStack diamond_helmet = new ItemStack(Material.DIAMOND_HELMET);
+        ItemStack diamond_chest = new ItemStack(Material.DIAMOND_CHESTPLATE);
+        ItemStack diamond_leggings = new ItemStack(Material.DIAMOND_LEGGINGS);
+        ItemStack diamond_boots = new ItemStack(Material.DIAMOND_BOOTS);
 
         ItemStack confirm = new ItemStack(Material.GREEN_WOOL); // confirm adding armor
 
@@ -168,15 +181,42 @@ public final class ArmorStandGui extends JavaPlugin {
         confirm_meta.setDisplayName(ChatColor.GREEN + "Confirm");
         confirm.setItemMeta((confirm_meta));
 
-        //adding item to the inventory
-        armor_menu.setItem(11, head);
-        armor_menu.setItem(12, chest);
-        armor_menu.setItem(14, legs);
-        armor_menu.setItem(15, boot);
-        armor_menu.setItem(40, confirm);
+        //current armor
+        armor_menu.setItem(4, current_head);
+        armor_menu.setItem(13, current_chest);
+        armor_menu.setItem(22, current_legs);
+        armor_menu.setItem(31, current_boots);
+
+        //adding leather armor
+        armor_menu.setItem(0, leather_helmet);
+        armor_menu.setItem(2, leather_chest);
+        armor_menu.setItem(6, leather_leggings);
+        armor_menu.setItem(8, leather_boots);
+
+        //adding diamond armor
+        armor_menu.setItem(36, diamond_helmet);
+        armor_menu.setItem(38, diamond_chest);
+        armor_menu.setItem(42, diamond_leggings);
+        armor_menu.setItem(44, diamond_boots);
+
+        //adding confirm
+        armor_menu.setItem(49, confirm);
 
         //open menu
         player.openInventory((armor_menu));
+
+
+
+
+    }
+    public void updateArmorDisplay(Player player){
+        ArmorStand stand = this.amorstands.get(player);
+        //get the current armor
+        //helmet
+        if(stand.getHelmet() !=null){
+            ItemStack current_head = (stand.getHelmet());
+
+        }
 
 
 
