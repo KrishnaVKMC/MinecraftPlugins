@@ -163,13 +163,32 @@ public final class ArmorStandGui extends JavaPlugin {
         ItemStack current_chest = new ItemStack(stand.getChestplate());
         ItemStack current_legs = new ItemStack(stand.getLeggings());
         ItemStack current_boots= new ItemStack(stand.getBoots());
-        //leather armor
+
+        //Leather armor
         ItemStack leather_helmet = new ItemStack(Material.LEATHER_HELMET);
         ItemStack leather_chest = new ItemStack(Material.LEATHER_CHESTPLATE);
         ItemStack leather_leggings = new ItemStack(Material.LEATHER_LEGGINGS);
         ItemStack leather_boots = new ItemStack(Material.LEATHER_BOOTS);
 
-        //diamond armor
+        //Chainmail armor
+        ItemStack chainmail_helmet = new ItemStack(Material.CHAINMAIL_HELMET);
+        ItemStack chainmail_chest = new ItemStack(Material.CHAINMAIL_CHESTPLATE);
+        ItemStack chainmail_leggings = new ItemStack(Material.CHAINMAIL_LEGGINGS);
+        ItemStack chainmail_boots = new ItemStack(Material.CHAINMAIL_BOOTS);
+
+        //Gold armor
+        ItemStack gold_helmet = new ItemStack(Material.GOLDEN_HELMET);
+        ItemStack gold_chest = new ItemStack(Material.GOLDEN_CHESTPLATE);
+        ItemStack gold_leggings = new ItemStack(Material.GOLDEN_LEGGINGS);
+        ItemStack gold_boots = new ItemStack(Material.GOLDEN_BOOTS);
+
+        //Iron armor
+        ItemStack iron_helmet = new ItemStack(Material.IRON_HELMET);
+        ItemStack iron_chest = new ItemStack(Material.IRON_CHESTPLATE);
+        ItemStack iron_leggings = new ItemStack(Material.IRON_LEGGINGS);
+        ItemStack iron_boots = new ItemStack(Material.IRON_BOOTS);
+
+        //Diamond armor
         ItemStack diamond_helmet = new ItemStack(Material.DIAMOND_HELMET);
         ItemStack diamond_chest = new ItemStack(Material.DIAMOND_CHESTPLATE);
         ItemStack diamond_leggings = new ItemStack(Material.DIAMOND_LEGGINGS);
@@ -192,6 +211,24 @@ public final class ArmorStandGui extends JavaPlugin {
         armor_menu.setItem(2, leather_chest);
         armor_menu.setItem(6, leather_leggings);
         armor_menu.setItem(8, leather_boots);
+
+        //adding chainmail armor
+        armor_menu.setItem(9, chainmail_helmet);
+        armor_menu.setItem(11, chainmail_chest);
+        armor_menu.setItem(15, chainmail_leggings);
+        armor_menu.setItem(17, chainmail_boots);
+
+        //adding gold armor
+        armor_menu.setItem(18, gold_helmet);
+        armor_menu.setItem(20, gold_chest);
+        armor_menu.setItem(24, gold_leggings);
+        armor_menu.setItem(26, gold_boots);
+
+        //adding iron armor
+        armor_menu.setItem(27, iron_helmet);
+        armor_menu.setItem(29, iron_chest);
+        armor_menu.setItem(33, iron_leggings);
+        armor_menu.setItem(35, iron_boots);
 
         //adding diamond armor
         armor_menu.setItem(36, diamond_helmet);
