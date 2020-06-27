@@ -206,6 +206,155 @@ public class MenuHandler implements Listener {
                         plugin.openArmorMenu(player);
                         break;
 
+                    //Leather Armor
+                    case CHAINMAIL_HELMET:
+                        if(stand.getHelmet().getType() == Material.CHAINMAIL_HELMET){
+                            stand.setHelmet(null);
+                            player.sendMessage("Remove!");
+
+                        }else{
+                            stand.setHelmet(new ItemStack(Material.CHAINMAIL_HELMET));
+                            player.sendMessage("Added!");
+
+                        }
+                        plugin.openArmorMenu(player);
+                        break;
+                    case CHAINMAIL_CHESTPLATE:
+                        if(stand.getChestplate().getType() == Material.CHAINMAIL_CHESTPLATE){
+                            stand.setChestplate(null);
+                            player.sendMessage("Remove!");
+
+                        }else{
+                            stand.setChestplate(new ItemStack(Material.CHAINMAIL_CHESTPLATE));
+                            player.sendMessage("Added!");
+
+                        }
+                        plugin.openArmorMenu(player);
+                        break;
+                    case CHAINMAIL_LEGGINGS:
+                        if(stand.getLeggings().getType() == Material.CHAINMAIL_LEGGINGS){
+                            stand.setLeggings(null);
+                            player.sendMessage("Remove!");
+
+                        }else{
+                            stand.setLeggings(new ItemStack(Material.CHAINMAIL_LEGGINGS));
+                            player.sendMessage("Added!");
+
+                        }
+                        plugin.openArmorMenu(player);
+                        break;
+                    case CHAINMAIL_BOOTS:
+                        if(stand.getBoots().getType() == Material.CHAINMAIL_BOOTS){
+                            stand.setBoots(null);
+                            player.sendMessage("Remove!");
+
+                        }else{
+                            stand.setBoots(new ItemStack(Material.CHAINMAIL_BOOTS));
+                            player.sendMessage("Added!");
+
+                        }
+                        plugin.openArmorMenu(player);
+                        break;
+
+                    //Gold Armor
+                    case GOLDEN_HELMET:
+                        if(stand.getHelmet().getType() == Material.GOLDEN_HELMET){
+                            stand.setHelmet(null);
+                            player.sendMessage("Remove!");
+
+                        }else{
+                            stand.setHelmet(new ItemStack(Material.GOLDEN_HELMET));
+                            player.sendMessage("Added!");
+
+                        }
+                        plugin.openArmorMenu(player);
+                        break;
+                    case GOLDEN_CHESTPLATE:
+                        if(stand.getChestplate().getType() == Material.GOLDEN_CHESTPLATE){
+                            stand.setChestplate(null);
+                            player.sendMessage("Remove!");
+
+                        }else{
+                            stand.setChestplate(new ItemStack(Material.GOLDEN_CHESTPLATE));
+                            player.sendMessage("Added!");
+
+                        }
+                        plugin.openArmorMenu(player);
+                        break;
+                    case GOLDEN_LEGGINGS:
+                        if(stand.getLeggings().getType() == Material.GOLDEN_LEGGINGS){
+                            stand.setLeggings(null);
+                            player.sendMessage("Remove!");
+
+                        }else{
+                            stand.setLeggings(new ItemStack(Material.GOLDEN_LEGGINGS));
+                            player.sendMessage("Added!");
+
+                        }
+                        plugin.openArmorMenu(player);
+                        break;
+                    case GOLDEN_BOOTS:
+                        if(stand.getBoots().getType() == Material.GOLDEN_BOOTS){
+                            stand.setBoots(null);
+                            player.sendMessage("Remove!");
+
+                        }else{
+                            stand.setBoots(new ItemStack(Material.GOLDEN_BOOTS));
+                            player.sendMessage("Added!");
+
+                        }
+                        plugin.openArmorMenu(player);
+                        break;
+                    //Iron Armor
+                    case IRON_HELMET:
+                        if(stand.getHelmet().getType() == Material.IRON_HELMET){
+                            stand.setHelmet(null);
+                            player.sendMessage("Remove!");
+
+                        }else{
+                            stand.setHelmet(new ItemStack(Material.IRON_HELMET));
+                            player.sendMessage("Added!");
+
+                        }
+                        plugin.openArmorMenu(player);
+                        break;
+                    case IRON_CHESTPLATE:
+                        if(stand.getChestplate().getType() == Material.IRON_CHESTPLATE){
+                            stand.setChestplate(null);
+                            player.sendMessage("Remove!");
+
+                        }else{
+                            stand.setChestplate(new ItemStack(Material.IRON_CHESTPLATE));
+                            player.sendMessage("Added!");
+
+                        }
+                        plugin.openArmorMenu(player);
+                        break;
+                    case IRON_LEGGINGS:
+                        if(stand.getLeggings().getType() == Material.IRON_LEGGINGS){
+                            stand.setLeggings(null);
+                            player.sendMessage("Remove!");
+
+                        }else{
+                            stand.setLeggings(new ItemStack(Material.IRON_LEGGINGS));
+                            player.sendMessage("Added!");
+
+                        }
+                        plugin.openArmorMenu(player);
+                        break;
+                    case IRON_BOOTS:
+                        if(stand.getBoots().getType() == Material.IRON_BOOTS){
+                            stand.setBoots(null);
+                            player.sendMessage("Remove!");
+
+                        }else{
+                            stand.setBoots(new ItemStack(Material.IRON_BOOTS));
+                            player.sendMessage("Added!");
+
+                        }
+                        plugin.openArmorMenu(player);
+                        break;
+
                     //Diamond armor
                     case DIAMOND_HELMET:
                        if(stand.getHelmet().getType() == Material.DIAMOND_HELMET){
